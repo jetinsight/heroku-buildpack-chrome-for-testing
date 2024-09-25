@@ -83,6 +83,7 @@ export PATH="$BUILD_DIR/.chrome-for-testing/chrome-linux64:$BUILD_DIR/.chrome-fo
 which chrome | indent
 which chromedriver | indent
 
+mkdir -p /app/.chrome-for-testing/chrome-linux64/
 ln -s /app/.chrome-for-testing/chrome-linux64/chrome /app/.apt/usr/bin/google-chrome
 
 echo "Installed Chrome for Testing $CHANNEL version $VERSION" | indent
