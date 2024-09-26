@@ -45,6 +45,7 @@ case "${STACK}" in
       libxfixes3
       libxkbcommon0
       libxrandr2
+      tzdata
     "
     ;;
   *)
