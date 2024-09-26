@@ -83,10 +83,10 @@ export PATH="$BUILD_DIR/.chrome-for-testing/chrome-linux64:$BUILD_DIR/.chrome-fo
 which chrome | indent
 which chromedriver | indent
 
-echo "Making the working chrome directory"
-mkdir -p /app/.apt/usr/bin/ | indent
+echo "Making the working chrome directory" | indent
+mkdir -p /app/.apt/usr/bin/
 
-echo "Linking to the known chrome space"
-ln -s /app/.chrome-for-testing/chrome-linux64/chrome /app/.apt/usr/bin/google-chrome | indent
+echo "Linking to the known chrome space" | indent
+ln -s /app/.chrome-for-testing/chrome-linux64/chrome /app/.apt/usr/bin/google-chrome
 
 echo "Installed Chrome for Testing $CHANNEL version $VERSION" | indent
