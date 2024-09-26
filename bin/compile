@@ -84,9 +84,9 @@ which chrome | indent
 which chromedriver | indent
 
 echo "Making the working chrome directory"
-mkdir -p /app/.apt/usr/bin/
+mkdir -p /app/.apt/usr/bin/ | indent
 
 echo "Linking to the known chrome space"
-ln -s /app/.chrome-for-testing/chrome-linux64/chrome /app/.apt/usr/bin/google-chrome
+ln -s /app/.chrome-for-testing/chrome-linux64/chrome /app/.apt/usr/bin/google-chrome | indent
 
 echo "Installed Chrome for Testing $CHANNEL version $VERSION" | indent
